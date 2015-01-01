@@ -1,10 +1,9 @@
 FactoryGirl.define do
   factory :recipe do
-    name "MyString"
-description "MyText"
-instructions "MyText"
-servings 1
-cooking_time 1
+    sequence (:name) { |n| "Disco Fries#{n}" }
+    description "A heart attack on a plate"
+    instructions "Eat them"
+    servings 2
+    cooking_time 40
   end
-
 end
